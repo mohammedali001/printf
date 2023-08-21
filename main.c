@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: Always 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
 int len;
@@ -42,3 +42,4 @@ _printf("Unknown:[%r]\n");
 printf("Unknown:[%r]\n");
 return (0);
 }
+/*Collaborators: Barnabas Ngugi & Mohammed Ali*/
