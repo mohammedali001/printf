@@ -1,6 +1,9 @@
 
+<<<<<<< HEAD
 #include "main.h"
 
+=======
+>>>>>>> 9e4e0323b5fd11125284a54d3110b2db8748509e
 void print_buffer(char buffer[], int *buff_ind);
 
 /**

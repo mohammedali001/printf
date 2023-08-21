@@ -20,6 +20,7 @@ int handle_write_char(char c, char buffer[],
 
 	UNUSED(precision);
 	UNUSED(size);
+<<<<<<< HEAD
 
 	if (flags & F_ZERO)
 		padd = '0';
@@ -33,6 +34,21 @@ int handle_write_char(char c, char buffer[],
 		for (i = 0; i < width - 1; i++)
 			buffer[BUFF_SIZE - i - 2] = padd;
 
+=======
+
+	if (flags & F_ZERO)
+		padd = '0';
+
+	buffer[i++] = c;
+	buffer[i] = '\0';
+
+	if (width > 1)
+	{
+		buffer[BUFF_SIZE - 1] = '\0';
+		for (i = 0; i < width - 1; i++)
+			buffer[BUFF_SIZE - i - 2] = padd;
+
+>>>>>>> 9e4e0323b5fd11125284a54d3110b2db8748509e
 		if (flags & F_MINUS)
 			return (write(1, &buffer[0], 1) +
 					write(1, &buffer[BUFF_SIZE - i - 1], width - 1));
@@ -200,7 +216,11 @@ int write_unsgnd(int is_negative, int ind,
  * @buffer: Arrays of chars
  * @ind: Index at which the number starts in the buffer
  * @length: Length of number
+<<<<<<< HEAD
  * @width: Wwidth specifier
+=======
+ * @width: Width specifier
+>>>>>>> 9e4e0323b5fd11125284a54d3110b2db8748509e
  * @flags: Flags specifier
  * @padd: Char representing the padding
  * @extra_c: Char representing extra char
@@ -250,4 +270,7 @@ int write_pointer(char buffer[], int ind, int length,
 		buffer[--ind] = extra_c;
 	return (write(1, &buffer[ind], BUFF_SIZE - ind - 1));
 }
+<<<<<<< HEAD
 /*Collaborators: Barnabas & Ali */
+=======
+>>>>>>> 9e4e0323b5fd11125284a54d3110b2db8748509e

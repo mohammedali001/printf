@@ -84,4 +84,7 @@ long int convert_size_unsgnd(unsigned long int num, int size)
 
 	return ((unsigned int)num);
 }
+<<<<<<< HEAD
 /*Collaborators: Barnabas & Ali*/
+=======
+>>>>>>> 9e4e0323b5fd11125284a54d3110b2db8748509e
